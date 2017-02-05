@@ -1,7 +1,7 @@
 
 <?php
 
-require_once("text.php");
+require_once ("text.php");
 $sentence1 = new text("");
 echo'<pre>';
     print_r($sentence1);
