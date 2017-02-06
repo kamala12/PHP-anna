@@ -1,6 +1,5 @@
 <?php
 // index.php
-
 // import configuration
 require_once 'conf.php';
 // import act description
@@ -34,4 +33,9 @@ $sql = 'SELECT NOW()';
 $res = $db->getArray($sql);
 // control query log output
 $db->showHistory();
+$sess->flush();
+// control session output
+echo '<pre>';
+print_r($sess);
+echo '</pre>';
 ?>
