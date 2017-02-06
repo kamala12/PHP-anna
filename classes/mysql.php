@@ -21,7 +21,7 @@ class mysql
 	function connect(){
 		$this->conn = mysqli_connect($this->host, $this->user, $this->pass, $this->dbname);
 		if(mysqli_connect_error()){
-			echo 'Viga andmebaasi ühendamisega<br />';
+			echo 'Viga andmebaasi Ã¼hendamisega<br />';
 			exit;
 		} // if problem with connection
 	}// connect
@@ -35,7 +35,7 @@ class mysql
 		$begin = $this->getMicrotime();
 		$res = mysqli_query($this->conn, $sql);
 		if($res === FALSE){
-			echo 'Viga päringuga <b>'.$sql.'</b><br />';
+			echo 'Viga pÃ¤ringuga <b>'.$sql.'</b><br />';
 			echo mysqli_error($this->conn).'<br />';
 			exit;
 		}
