@@ -2,9 +2,9 @@
 
 // define constants
 
-define('DBHOST', '138.68.68.130');
-define('DBUSER', 'oliverotsmann');
-define('DBPASS', 'oov6iegh');
+define('DBHOST', 'localhost');
+define('DBUSER',  'root');
+define('DBPASS', '');
 define('DBNAME', 'oliverotsmann_db');
 
 /*
